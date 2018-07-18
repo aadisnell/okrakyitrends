@@ -1,4 +1,5 @@
-<?php include 'includes/header.php' ?>
+<?php include 'includes/db.php' ?>
+   <?php include 'includes/header.php' ?>
     <!-- Navigation -->
 
     <?php include 'includes/nav.php' ?>
@@ -12,21 +13,21 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('pic/4.jpg')">
+          <div class="carousel-item active" style="background-image: url('pic/no.png')">
             <div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('pic/5.png')">
+          <div class="carousel-item" style="background-image: url('pic/nana.png')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('pic/3.jpg')">
+          <div class="carousel-item" style="background-image: url('pic/kwabs.png')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Third Slide</h3>
               <p>This is a description for the third slide.</p>
@@ -63,6 +64,56 @@
           
           </div>
       </div>
-
+    
+   <div class=" container welcome-w3lsrow2">
+      <div class="row">
+       <div class="col-sm-4 col-xs-4 w3welcome-grids">
+           <img src="pic/2.png" class="img-responsive" alt="Okrakye Designs" />
+       </div>
+       
+        <div class="col-sm-4 col-xs-4 w3welcome-grids">
+           <img src="pic/3.png" class="img-responsive" alt="Okrakye Designs" />
+       </div>
+        <div class="col-sm-4 col-xs-4 w3welcome-grids">
+           <img src="pic/6.png" class="img-responsive" alt="OB the comic" />
+           <div class="clearfix"> </div>
+       </div>
+       </div>
+   </div>
+   <br><br><br>
+   <div class="services">
+       <div class="container">
+           <h3 class="agileits-title">Core Values</h3>
+           <div class="row text-center services-agileinfo">
+               <div class="col-sm-3 col-xs-6 services-w3grids">
+                   <h5>1</h5>
+                   <h6>Some text here...</h6>
+               </div>
+               <div class="col-sm-3 col-xs-6 services-w3grids">
+                   <h5>2</h5>
+                   <h6>Another text  here...</h6>
+               </div>
+               <div class="col-sm-3 col-xs-6 services-w3grids">
+                   <h5>3</h5>
+                   <h6>More text here...</h6>
+               </div>
+                 <div class="col-sm-3 col-xs-6 services-w3grids">
+                   <h5>4</h5>
+                   <h6>More text here...</h6>
+               </div>
+               <div class="clearfix"></div>
+           </div>
+       </div>
+   </div>
+   
+   <!---services--->
+   
+   <div class="w3-agilesale welcome">
+       <div class="container">
+            <h3 class="agileits-title">FAST DELIVERY ACCROSS GHANA AND BEYOND. </h3>
+            <p><a href="../includes/contactus.php">Contact Us</a></p>
+       </div>
+   </div>
+   
     <!-- Footer -->
  <?php include 'includes/footer.php'?>

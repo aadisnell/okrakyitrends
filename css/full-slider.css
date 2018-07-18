@@ -11,7 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body{
 	margin:0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Song Myung', serif;
 	background: #fff;  
 }
 body a{
@@ -26,6 +26,7 @@ body a{
 h1,h2,h3,h4,h5,h6{
 	margin:0;
 	font-family: 'Limelight', cursive; 
+    font-family: 'Righteous', cursive;
 }
 
 p{
@@ -119,12 +120,13 @@ body a:hover,body a:focus {
     background: rgba(6, 6, 6, 0.27);
     padding: 1em 0;
 }
-nav.navbar.navbar-default {
-    background-color: inherit;
+nav.navbar {
+    background-color: 1e0e0c;
     border: none;
     margin: 0;
 }
 ul.nav.navbar {
+    background-color: 1e0e0c;
     text-align: center;
 	margin: 0;
 	min-height: inherit;
@@ -267,7 +269,7 @@ h5.subtitle {
 	-webkit-box-shadow: -7px 7px 5px rgb(195, 195, 195);
 	-moz-box-shadow: -7px 7px 5px rgb(195, 195, 195); 
     box-shadow: -7px 7px 5px rgb(195, 195, 195);
-    border-color: #ff5722;
+    border-color: #762D76;
     border-style: solid;
 }
 
@@ -288,8 +290,8 @@ h3.agileits-title {
     color: #fff;
 }
 .services {
-    background: #ff5722;
-    background: url(../images/bg1.jpg)no-repeat center fixed;
+    background: #762D76;
+    background: url(../pic/bg.png)no-repeat center fixed;
     background-size: cover;
 }
 .services h5 {
@@ -300,7 +302,7 @@ h3.agileits-title {
     margin-right: 2em;
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Song Myung', serif;
     font-weight: 100;
 }
 .services h6 {
@@ -315,7 +317,7 @@ h3.agileits-title {
 }
 .w3-agilesale p a {
     font-size: 1.5em;
-    color: #ff5722; 
+    color: #762D76; 
     border: 1px solid;
     padding: .4em 1em;
 	display: inline-block;
@@ -470,11 +472,12 @@ h3.agileits-title {
     color: #FF5722;
     line-height: 1.5em;
     letter-spacing: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Song Myung', serif;
     font-weight: 300;
 }
 .about-w3left p {
     margin-top:1.5em;
+     font-family: 'Song Myung', serif;
 }
 .about-w3left ul li {
     display: block;
@@ -568,25 +571,25 @@ h3.agileits-title {
 /*-- //button style --*/
 /*-- team --*/   
 .team {
-    background: #faebd7;
+    background: #f2e5f2;
 }
 .w3ls-effect {
     display: block;
     height: 350px;
     overflow: hidden;
     position: relative;
-	-webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
-	-moz-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
-	-o-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
-	-ms-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
-    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
+	-webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.45);
+	-o-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.45);
+	-ms-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.45);
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
     opacity: 1;
-    filter: alpha(opacity=100);
+    filter: alpha(opacity=85);
 }
 .w3ls-effect img { 
 	width: 100%;
@@ -612,7 +615,7 @@ h3.agileits-title {
 	transition: all 0.5s;
 } 
 .w3ls-effect:hover:before {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 .w3ls-effect:hover .w3layouts-caption {
 	-moz-transform: translateY(-100%);
@@ -1869,7 +1872,7 @@ h5.subtitle {
     padding: 2.5em 1em;
 }
 h3.agileits-title {
-    font-size: 3.2em;
+    font-size: 2.5em;
     letter-spacing: 3px;
     margin-bottom: 0.8em;
 }
@@ -2519,7 +2522,7 @@ button.navbar-toggle {
 /*-- //responsive-design --*/
 
 .carousel-item {
-  height: 80vh;
+  height: 100vh;
   min-height: 200px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -2527,6 +2530,8 @@ button.navbar-toggle {
   -o-background-size: cover;
   background-size: cover;
 }
+
+
 #myFooter{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;

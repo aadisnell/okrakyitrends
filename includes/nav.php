@@ -7,7 +7,7 @@
 </style>
              <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.php"><img src="pic/logo.png" style="width:70px;" alt="Okrakyi-logo" ></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,13 +19,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="includes/aboutus.php">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Designs</a>
+              <a class="nav-link" href="includes/gallery.php">Our Designs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="includes/contactus.php">Contact Us</a>
             </li>
           </ul>
         </div>
