@@ -55,7 +55,7 @@
 </div>
 </div>
 </div>
-<?php }?><br><br>
+<?php }?>
 <div class="team">
     <div class="container">
         <h3 class="agileits-title">Our Team</h3>
@@ -63,7 +63,7 @@
            <div class="row">
             <div class="col-md-3 col-sm-4 col-xs-6 team-wthree-grids">
                 <div class="w3ls-effect">
-                    <img src="../pic/ak.png" alt="designer">
+                    <img src="../pic/aksmall.png" alt="designer">
                     <div class="w3layouts-caption">
                         <h4>Gideon</h4>
                         <p>Designer</p>
@@ -73,11 +73,11 @@
                         <a href="#" class="social-button google"><i class="fa fa-instagram"></i></a>  
                     </div>
                 </div>
-            </div>
+            </div><br>
             
                 <div class="col-md-3 col-sm-4 col-xs-6 team-wthree-grids">
                 <div class="w3ls-effect">
-                    <img src="../pic/owusu.png" alt="designer">
+                    <img src="../pic/owususmall.png" alt="designer">
                     <div class="w3layouts-caption">
                         <h4>Charles</h4>
                         <p>Designer</p>
@@ -87,8 +87,9 @@
                         <a href="#" class="social-button google"><i class="fa fa-instagram"></i></a>  
                     </div>
                 </div>
-            </div>
+            </div><br>
             
+<!--
                 <div class="col-md-3 col-sm-4 col-xs-6 team-wthree-grids">
                 <div class="w3ls-effect">
                     <img src="../pic/charles.jpg" alt="designer">
@@ -101,7 +102,7 @@
                         <a href="#" class="social-button google"><i class="fa fa-instagram"></i></a>  
                     </div>
                 </div>
-            </div>
+            </div><br>
             
               <div class="col-md-3 col-sm-4 col-xs-6 team-wthree-grids">
                 <div class="w3ls-effect">
@@ -116,6 +117,7 @@
                     </div>
                 </div>
             </div>
+-->
             
             </div>
         </div>
