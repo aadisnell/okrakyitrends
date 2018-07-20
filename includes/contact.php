@@ -1,3 +1,4 @@
+<?php include 'header2.php' ?>
 <?php include 'db.php' ?>
 
 <?php 
@@ -9,14 +10,19 @@ if(isset($_POST['submit'])){
      $email = $_POST['email'];
     $number= $_POST['number'];
      $message = $_POST['message'];
+    if($name == '' || $email == '' || $number == '' || $message == ''){
+        echo "Please make sure you fill all inputs";
+    } 
     $mailto = "asirificharles@yahoo.com";
     $headers = "From: " . $email;
-    $text = "You have recieved an e-mail from ".$name. '' . $email . '' .$number. ".\n\n". $message;
-
- require 'autoload.php';
-require 'Exception.php';
- require 'PHPMailer.php';
- require 'SMTP.php';
+    $text = "You have recieved an message from " . $name . ' ' . $email . ' ' . $number . ".\n\n". $message;
+  $query = "INSERT into contactus(name,email,number,message) VALUES('$name','$email','$number', '$message')";
+    $result = mysqli_query($con, $query);
+    
+     require 'autoload.php';
+     require 'Exception.php';
+     require 'PHPMailer.php';
+     require 'SMTP.php';
 $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
@@ -37,12 +43,12 @@ $mail->Subject = 'Enquiry';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 $mail->AltBody = 'This is a plain-text message body';
 //Attach an image file
-$mail->addAttachment('images/phpmailer_mini.png');
+$mail->addAttachment('logo1.jpg');
 //send the message, check for errors
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-    echo "Message sent!";
+    echo 'Message Sent';
     header("Location:contactus.php?mailsent");
 }
 }

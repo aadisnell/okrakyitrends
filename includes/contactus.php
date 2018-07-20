@@ -1,4 +1,81 @@
-<?php include 'header2.php'?>
+<?php include 'db.php' ?>
+
+<?php 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+$nameEr = $emailEr = $numberEr = $messageEr = '';
+$isError = false;
+$response = '';
+$name = $email = $number = $message = '';
+if(isset($_POST['submit'])){
+    if(empty($_POST['name'])){
+        $nameEr = 'Name field is empty';
+    }else{
+         $name = $_POST['name'];
+    }
+     if(empty($_POST['email'])){
+        $emailEr = 'Email field is empty';
+    }else{
+         $email = $_POST['email'];
+    }
+     if(empty($_POST['number'])){
+        $numberEr = 'Phone Number field is empty';
+    }else{
+         $number = $_POST['number'];
+    }
+     if(empty($_POST['message'])){
+        $messageEr = 'Message field is empty';
+    }else{
+         $message = $_POST['message'];
+     }
+    
+   if (!empty($name) && !empty($email) && !empty($number) && !empty($message)) {
+   
+    $mailto = "asirificharles@yahoo.com";
+    $headers = "From: " . $email;
+    $text = "You have recieved an message from " . $name . ' ' . $email . ' ' . $number . ".\n\n". $message;
+   $query = "INSERT into contactus(name,email,number,message) VALUES('$name','$email','$number', '$message')";
+    $result = mysqli_query($con, $query);
+    
+     require 'autoload.php';
+     require 'Exception.php';
+     require 'PHPMailer.php';
+     require 'SMTP.php';
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->Host = 'smtp.gmail.com';  
+$mail->SMTPAuth = true;                             
+$mail->Username = 'ascharles23@gmail.com';          
+$mail->Password = '@snELL0541;';                       
+$mail->SMTPSecure = 'tls';                
+$mail->Port = 587;
+//Create a new PHPMailer instance
+
+//Set who the message is to be sent from
+$mail->setFrom($email, $name);
+//Set who the message is to be sent to
+$mail->addAddress('asirificharles@yahoo.com');
+//Set the subject line
+$mail->Body =$text;
+$mail->Subject = 'Enquiry';
+//Read an HTML message body from an external file, convert referenced images to embedded,
+$mail->AltBody = 'This is a plain-text message body';
+//Attach an image file
+$mail->addAttachment('logo1.jpg');
+//send the message, check for errors
+//if (!$mail->send()) {
+//    echo "Mailer Error: " . $mail->ErrorInfo;
+//} else {
+//    echo 'Message Sent';
+//    header("Location:contactus.php?mailsent");
+//}
+       $response = $mail->send();
+       header("Location: contactus.php?mailsent"); // redirect back to your contact form
+       exit;
+}
+}
+?>
 
             <style>
 
@@ -6,11 +83,9 @@
                     background-color:rgba(238,130,238,0.5);
                     
                 }
-         #col {
-                    color: 1e0e0c;
-                }
-</style>
-             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+     
+        </style>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
       <a class="navbar-brand" href="../index.php"><img src="../pic/logo.png" style="width:70px;" alt="Okrakyi-logo" ></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,25 +140,40 @@
 <div class="container">
     <div class="row">
         <div class="col-md-7">
-            <form class="form-group" action="contact.php" method="post">
+    
+        <?php
+        if (!empty($response)) {
+            ?>
+            <div class="alert alert-info">
+                <?php echo $response ?>
+            </div>
+            <?php
+        }
+        ?>
+
+            <form class="form-group" id="main" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="">Name</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Name" name="name" id="name">
+                    <input value="<?php if(!$isError){echo htmlspecialchars($name);} else{echo '';}?>" type="text" class="form-control" placeholder="Name" name="name" id="name">
+                    <span style="color: #FF0000"><?php if (!empty($nameEr)) {echo $nameEr ;} ?></span>
+
                 </div>
                  <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="">@</span>
                     </div>
-                    <input type="email" id="email" class="form-control" placeholder="Email Address" name="email">
+                    <input value="<?php if(!$isError){echo htmlspecialchars($email);} else{echo '';}?>" type="email" id="email" class="form-control" placeholder="Email Address" name="email">
+                    <span style="color: #FF0000"><?php if (!empty($emailEr)) {echo $emailEr;} ?></span>
                 </div>
                 
                  <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="">Phone No.</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Phone No." id="number" name="number">
+                    <input value="<?php if(!$isError){echo htmlspecialchars($email);} else{echo '';}?>" type="text" class="form-control" placeholder="Phone No." id="number" name="number">
+                    <span style="color: #FF0000"><?php if (!empty($numberEr)) {echo $numberEr;} ?></span>
                 </div>
                  <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -92,7 +182,8 @@
                     <style>
                         textarea{resize:both;}
                      </style>
-                    <textarea  name="message" id="message" class="form-control" placeholder="Enter your message here..."></textarea>
+                    <textarea value="<?php if(!$isError){echo htmlspecialchars($message);} else{echo '';}?>" name="message" id="message" class="form-control" placeholder="Enter your message here..."></textarea>
+                    <span style="color: #FF0000"><?php if(!empty($messageEr)) {echo $messageEr; }?></span>
                 </div>
                 <button name="submit" class="btn btn-danger" type="submit" >SUBMIT</button>
             </form>
@@ -128,33 +219,4 @@
             <p><a href="contactus.php">Contact Us</a></p>
        </div>
    </div>
-<script>
-    $(document).ready(function(){
-       $('#submit').click(function(){
-           var name = $('#name').val();
-           var email = $('#email').val();
-           var number = $('#number').val();
-           var message = $('#message').val();
-           
-       }); 
-        
-        if(name == ''||email == ''||number == ''||message == ''){
-            alert("Sorry, please fill all the fields below ..");
-        }else{
-            $.ajax({
-                type:"POST",
-                url:"contact.php",
-                data:{name:name , email:email , number:number, message:message},
-                success:function(data){
-                    alert(data);
-                     $('#name').empty();
-                     $('#email').empty();
-                      $('#number').empty();
-                      $('#message').empty();
-                }
-            });
-        }
-    });
-</script>
-
-<?php include 'footer2.php'?>
+<?php include 'footer2.php' ?>
