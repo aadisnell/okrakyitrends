@@ -21,9 +21,9 @@
         <footer id="myFooter">
       <div class="container">
         <ul>
-            <li><a href="aboutus.php">Company Information</a></li>
-            <li><a href="contactus.php">Contact Us</a></li>
-            <li><a href="gallery.php">African Wear Designs</a></li>
+            <li><a href="../includes/aboutus.php">Company Information</a></li>
+            <li><a href="../includes/contactus.php">Contact Us</a></li>
+            <li><a href="../includes/gallery.php">African Wear Designs</a></li>
         </ul>
         
       </div>

@@ -55,7 +55,7 @@
 </div>
 </div>
 </div>
-<?php }?>
+<?php }?><br><br>
 <div class="team">
     <div class="container">
         <h3 class="agileits-title">Our Team</h3>
@@ -123,4 +123,11 @@
         </div>
     </div>
 </div>
-<?php include 'footer2.php'?>
+
+   <div class="w3-agilesale welcome">
+       <div class="container">
+            <h3 class="agileits-title">FAST DELIVERY ACCROSS GHANA AND BEYOND. </h3>
+            <p><a href="./includes/contactus.php">Contact Us</a></p>
+       </div>
+   </div>
+<?php include 'footer2.php' ?>

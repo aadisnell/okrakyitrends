@@ -110,73 +110,57 @@ body a:hover,body a:focus {
     color: #FF5722;
     letter-spacing: 2px;
 }
-/*-- //logo --*/
-/*-- top-nav --*/
-.w3menu.navbar-left {
-    margin-left: 12em;
-}
-.top-nav {
-    z-index: 999;
-    background: rgba(6, 6, 6, 0.27);
-    padding: 1em 0;
-}
-nav.navbar {
-    background-color: 1e0e0c;
-    border: none;
-    margin: 0;
-}
-ul.nav.navbar {
-    background-color: 1e0e0c;
-    text-align: center;
-	margin: 0;
-	min-height: inherit;
-}
-.top-nav ul li {
-    margin: 0 0 0 1em;
-    display: inline-block;
-}
-.top-nav ul li:nth-child(1){
-	margin: 0;
-}
-/* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
-.top-nav ul li a {
-    text-decoration: none;
-    letter-spacing: 4px;
-    font-size: 1.1em;
-    color: #fff;
+@media(max-width:480px){
+    div#navbarResponsive {
     position: relative;
-    font-weight: 400;
-    padding: .5em 1.1em;
-	display: inline-block;
+    width: 100%;
+/*    background: rgba(0, 0, 0, 0.1);*/
+    text-align: center;
+    z-index: 999;
 }
+    .navbar .navbar-nav > li > a {
+    color: white;
+   
+}
+}
+.navbar .navbar-nav > li > a {
+    color:#1e0e0c !important;
+    font-size: 1.1em;
+    position: relative;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus,.navbar .navbar-nav li a.active {
+    color:violet !important;
+	background:none!important;
+}
+.navbar .navbar-toggler {
+    border-color: #fff;
+	background: #fff;
+} 
+.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {
+    background-color: #fff;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+    background-color: darkblue;
+}
+.navbar .navbar-toggler {
+    border-color: #fff;
+	background: #fff;
+} 
+.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {
+    background-color: #fff;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+    background-color: darkviolet;
+}
+
+
 .nav > li > a:hover, .nav > li > a:focus {
     background: none;
 } 
-.top-nav ul li a:hover,.top-nav ul li a.active{
-    background: #FF5722;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-    border-radius: 2px;
-}
-.top-nav .open > .dropdown-menu {
-    display: block;
-    background: #382e22;
-    text-align: left;
-    margin-top: 1.1em;
-}
-.top-nav .open > .dropdown-menu li {
-    margin: 0;
-	display: block;
-}
-.top-nav .open > .dropdown-menu li a {
-    display: block;
-    color: #fff;
-    font-size: .9em;
-}
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #ff5722;
-    border: none;
-}
+
 /*-- //top-nav --*/
 /*-- social-icons --*/ 
 .w3ls-bnr-icons.social-icon {

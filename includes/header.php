@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="pic/ok.ico" />
+    <link rel="shortcut icon" href="nok.ico" />
    <link href="https://fonts.googleapis.com/css?family=Righteous|Song+Myung" rel="stylesheet">
     <title>Okrakyi Trends</title>
 

@@ -15,21 +15,18 @@
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('pic/no.png')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url('pic/nana.png')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url('pic/kwabs.png')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
               <p>This is a description for the third slide.</p>
             </div>
           </div>
@@ -111,7 +108,7 @@
    <div class="w3-agilesale welcome">
        <div class="container">
             <h3 class="agileits-title">FAST DELIVERY ACCROSS GHANA AND BEYOND. </h3>
-            <p><a href="../includes/contactus.php">Contact Us</a></p>
+            <p><a href="./includes/contactus.php">Contact Us</a></p>
        </div>
    </div>
    
