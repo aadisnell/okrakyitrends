@@ -1,5 +1,5 @@
 <?php include 'db.php' ?>
-
+<?php include 'header2.php' ?>
 <?php 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

@@ -50,7 +50,7 @@
                  <h5 class="subtitle">
                      - New Trends
                  </h5> 
-                 <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at placerat ante. Praesent nulla nunc, pretium dapibus efficitur in, auctor eget elit. Lorem ipsum dolor sit amet</p>
+                 <p id="text"> “People always ask me what the trends are, but I’m not a believer in trends. Individuality is more important to me, to stand out and have the confidence to wear something you’re comfortable in – it just happens. I’m comfortable wearing a suit.” – David Gandy</p>
               </div>
              
                   

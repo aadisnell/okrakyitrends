@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
     } 
     $mailto = "asirificharles@yahoo.com";
     $headers = "From: " . $email;
-    $text = "You have recieved an message from " . $name . ' ' . $email . ' ' . $number . ".\n\n". $message;
+    $text = "<p>You have recieved an message from </p><br>" . '<br>' . $name . ' ' . '<br>' . $email . ' ' . $number . '<br>' . $message;
   $query = "INSERT into contactus(name,email,number,message) VALUES('$name','$email','$number', '$message')";
     $result = mysqli_query($con, $query);
     
@@ -25,6 +25,7 @@ if(isset($_POST['submit'])){
      require 'SMTP.php';
 $mail = new PHPMailer();
 $mail->IsSMTP();
+$mail->IsHTML(true);
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'ascharles23@gmail.com';                 // SMTP username
