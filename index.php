@@ -15,19 +15,19 @@
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('pic/no.png')">
             <div class="carousel-caption d-none d-md-block">
-              <p>This is a description for the first slide.</p>
+              <p>People see you first before they hear you. Always look good</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('pic/nana.png')">
+          <div class="carousel-item" style="background-image: url('pic/cover.png')">
             <div class="carousel-caption d-none d-md-block">
-              <p>This is a description for the second slide.</p>
+              <p>People see you first before they hear you. Always look good</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('pic/kwabs.png')">
+          <div class="carousel-item" style="background-image: url('pic/cover1.png')">
             <div class="carousel-caption d-none d-md-block">
-              <p>This is a description for the third slide.</p>
+              <p>People see you first before they hear you. Always look good</p>
             </div>
           </div>
         </div>
@@ -84,19 +84,19 @@
            <div class="row text-center services-agileinfo">
                <div class="col-sm-3 col-xs-6 services-w3grids">
                    <h5>1</h5>
-                   <h6>Some text here...</h6>
+                   <h6>Time Conscious</h6>
                </div>
                <div class="col-sm-3 col-xs-6 services-w3grids">
                    <h5>2</h5>
-                   <h6>Another text  here...</h6>
+                   <h6>Customer Care</h6>
                </div>
                <div class="col-sm-3 col-xs-6 services-w3grids">
                    <h5>3</h5>
-                   <h6>More text here...</h6>
+                   <h6>Fast Delivery</h6>
                </div>
                  <div class="col-sm-3 col-xs-6 services-w3grids">
                    <h5>4</h5>
-                   <h6>More text here...</h6>
+                   <h6>Creative,Unique Designs</h6>
                </div>
                <div class="clearfix"></div>
            </div>

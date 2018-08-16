@@ -89,40 +89,17 @@
                 </div>
             </div><br>
             
-<!--
-                <div class="col-md-3 col-sm-4 col-xs-6 team-wthree-grids">
-                <div class="w3ls-effect">
-                    <img src="../pic/charles.jpg" alt="designer">
-                    <div class="w3layouts-caption">
-                        <h4>Charles</h4>
-                        <p>Designer</p>
-                    </div>
-                    <div class="wthree-icon social-icon">
-				        <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
-                        <a href="#" class="social-button google"><i class="fa fa-instagram"></i></a>  
-                    </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                     <div class="fb-page" data-href="https://www.facebook.com/Okrakyitrends/" data-tabs="timeline,events,messages" data-width="400" data-height="300" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Okrakyitrends/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Okrakyitrends/">Okrakyi trends</a></blockquote></div>
+   </div>
                 </div>
             </div><br>
             
-              <div class="col-md-3 col-sm-4 col-xs-6 team-wthree-grids">
-                <div class="w3ls-effect">
-                    <img src="../pic/charles.jpg" alt="designer">
-                    <div class="w3layouts-caption">
-                        <h4>Charles</h4>
-                        <p>Designer</p>
-                    </div>
-                    <div class="wthree-icon social-icon">
-				        <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
-                        <a href="#" class="social-button google"><i class="fa fa-instagram"></i></a>  
-                    </div>
-                </div>
-            </div>
--->
+         
             
             </div>
         </div>
     </div>
-</div>
 
    <div class="w3-agilesale welcome">
        <div class="container">
@@ -130,4 +107,10 @@
             <p><a href="./includes/contactus.php">Contact Us</a></p>
        </div>
    </div>
+
+      
+   <br><br>
+   
+
+  
 <?php include 'footer2.php' ?>

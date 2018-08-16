@@ -207,7 +207,7 @@ body a:hover,body a:focus {
 }
 /*-- //social-icons --*/
 /*-- welcome--*/
-.welcome,.about,.team,.gallery,.contact,.services,.codes{
+.welcome,.about,.team,.contact,.services,.codes{
 	padding:5em 0;
 } 
 p {
@@ -706,9 +706,26 @@ h3.agileits-title {
 .gallery {
     background: #faebd7;
 }
+@media (max-width:480px){
+    .gallery{
+        position: relative;
+        text-align: center;
+        
+    }
+}
+
+@media (max-width:768px){
+    .gallery{
+        position: relative;
+        text-align: center;
+        margin: 3em 0;
+    }
+}
+/*
 .w3gallery-grids {
     padding: 1em;
 }  
+*/
 /*-- imghvr-hinge --*/
 [class^='imghvr-'],
 [class*=' imghvr-'] {
@@ -1760,7 +1777,7 @@ h5.subtitle {
 .w3welcome-img { 
     min-height: 27em; 
 }
-.welcome, .about, .team, .gallery, .contact, .services, .codes {
+.welcome, .about, .team,.gallery .contact, .services, .codes {
     padding: 4em 0;
 }
 .w3-agilesale h3.agileits-title {
@@ -1955,7 +1972,7 @@ h3.agileits-title {
 }
 }
 @media(max-width:768px){
-.welcome, .about, .team, .gallery, .contact, .services, .codes {
+.welcome, .about, .team, .gallery , .contact, .services, .codes {
     padding: 3em 0;
 }
 .w3ls_single_left_grid1 {
@@ -2278,7 +2295,7 @@ div#bs-example-navbar-collapse-1 {
     font-size: 1.8em;
     letter-spacing: 0px;
 }
-.welcome, .about, .team, .gallery, .contact, .services, .codes {
+.welcome, .about, .team, .contact, .services, .codes {
     padding: 2em 0;
 }
 .subscribe form {
