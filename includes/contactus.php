@@ -200,6 +200,7 @@ $mail->addAttachment('logo1.jpg');
                 <h5>Phones:</h5>
                 <p><i class="fa fa-mobile"></i>+233244074367</p>
                 <p><i class="fa fa-mobile"></i>+233542313999</p>
+               <p><a title="click to send us message on whatsapp" href="https://api.whatsapp.com/send?phone=233244074367"><i class="fa fa-whatsapp"></i></a></p>
             </div>
             
             <div class="address">

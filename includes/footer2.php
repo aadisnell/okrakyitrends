@@ -28,7 +28,7 @@
       </div>
       <div class="footer-social">
           <a href="https://www.facebook.com/Okrakyitrends/" target="_blank" class="social-icons"><i class="fa fa-facebook"></i></a>
-          <a href="" class="social-icons"><i class="fa fa-twitter"></i></a>
+          <a title="click to send us message on whatsapp" href="https://api.whatsapp.com/send?phone=233244074367" class="social-icons"><i class="fa fa-whatsapp"></i></a>
           <a href="" class="social-icons"><i class="fa fa-instagram"></i></a><br><br>
           <p class="footer-copyright">&#169; 2018 Copyright Okrakyi Trends(Fashion Design)</p>
       </div>

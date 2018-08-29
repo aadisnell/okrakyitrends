@@ -13,7 +13,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('pic/no.png')">
+          <div class="carousel-item active" style="background-image: url('pic/tb.jpg')">
             <div class="carousel-caption d-none d-md-block">
               <p>People see you first before they hear you. Always look good</p>
             </div>

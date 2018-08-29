@@ -27,6 +27,9 @@
             <li class="nav-item">
               <a class="nav-link" href="includes/contactus.php">Contact Us</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://blog.okrakyitrends.com/">Our Blog</a>
+            </li>
           </ul>
         </div>
       </div>

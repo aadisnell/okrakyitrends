@@ -2639,11 +2639,11 @@ button.navbar-toggle {
     color:red;
 }
 
-#myFooter .fa-twitter:hover{
-    color: #00aced;
+#myFooter .fa-whatsapp:hover{
+    color: seagreen;
 
 }
 
-#myFooter .fa-twitter:focus{
-    color:#00aced;
+#myFooter .fa-whatsapp:focus{
+    color:seagreen;
 }
