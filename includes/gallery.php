@@ -69,6 +69,57 @@
  <div class="container">
     <div class="row">
         <div class="col-sm-3 col-xs-6 w3gallery-grids">
+             <a href="../pic/53.jpg">
+               <img class="img-responsive" src="../pic/53.jpg" alt="African wear designs" /> 
+            </a> 
+       </div>
+       
+       <div class="col-sm-3 col-xs-6 w3gallery-grids">
+             <a href="../pic/54.jpg">
+               <img class="img-responsive" src="../pic/54.jpg" alt="Fashion design in Ghana" /> 
+            </a>
+       </div>
+       
+       <div class="col-sm-3 col-xs-6 w3gallery-grids">
+             <a href="../pic/55.jpg">
+               <img class="img-responsive" src="../pic/55.jpg" alt="Ghanaian Designs" /> 
+            </a> 
+       </div>
+       
+        <div class="col-sm-3 col-xs-6 w3gallery-grids">
+             <a href="../pic/61.jpg">
+               <img class="img-responsive" src="../pic/61.jpg" alt="Foster Romanus " /> 
+            </a> 
+       </div>
+   </div><br>
+   
+    <div class="row">
+        <div class="col-sm-3 col-xs-6 w3gallery-grids">
+             <a href="../pic/57.jpg">
+               <img class="img-responsive" src="../pic/57.jpg" alt="African wear designs" /> 
+            </a> 
+       </div>
+       
+       <div class="col-sm-3 col-xs-6 w3gallery-grids">
+             <a href="../pic/58.jpg">
+               <img class="img-responsive" src="../pic/58.jpg" alt="Fashion design in Ghana" /> 
+            </a>
+       </div>
+       
+       <div class="col-sm-3 col-xs-6 w3gallery-grids">
+             <a href="../pic/59.jpg">
+               <img class="img-responsive" src="../pic/59.jpg" alt="Ghanaian Designs" /> 
+            </a> 
+       </div>
+       
+        <div class="col-sm-3 col-xs-6 w3gallery-grids">
+             <a href="../pic/60.jpg">
+               <img class="img-responsive" src="../pic/60.jpg" alt="Okrakyi Designs" /> 
+            </a> 
+       </div>
+   </div><br>
+    <div class="row">
+        <div class="col-sm-3 col-xs-6 w3gallery-grids">
              <a href="../pic/1.jpg">
                <img class="img-responsive" src="../pic/1.jpg" alt="African wear designs" /> 
             </a> 
